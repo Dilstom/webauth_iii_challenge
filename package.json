@@ -1,0 +1,26 @@
+{
+ "name": "webauth-iii-challenge-master",
+ "version": "1.0.0",
+ "main": "index.js",
+ "repository": "https://github.com/Dilstom/webauth_iii_challenge.git",
+ "author": "me",
+ "license": "MIT",
+ "devDependencies": {
+  "nodemon": "^1.19.0"
+ },
+ "scripts": {
+  "server": "nodemon",
+  "start": "node index.js"
+ },
+ "dependencies": {
+  "bcryptjs": "^2.4.3",
+  "cors": "^2.8.5",
+  "dotenv": "^8.0.0",
+  "express": "^4.16.4",
+  "express-session": "^1.16.1",
+  "helmet": "^3.18.0",
+  "jsonwebtoken": "^8.5.1",
+  "knex": "^0.16.5",
+  "sqlite3": "^4.0.8"
+ }
+}
