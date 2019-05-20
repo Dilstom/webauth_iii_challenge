@@ -1,5 +1,4 @@
 const db = require('../database/dbConfig.js');
-const jwt = require('jsonwebtoken');
 
 module.exports = {
  add,
