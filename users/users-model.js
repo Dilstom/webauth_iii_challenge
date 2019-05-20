@@ -1,4 +1,5 @@
 const db = require('../database/dbConfig.js');
+const jwt = require('jsonwebtoken');
 
 module.exports = {
  add,
@@ -12,7 +13,9 @@ function find() {
 }
 
 function findBy(filter) {
- return db('users').where(filter);
+ return db('users')
+  .where(filter)
+  .first();
 }
 
 async function add(user) {
